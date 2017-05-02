@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <uk.me.ajmfulcher.textwrap.TextWrapLayout
+            android:id="@+id/left_aligned_textWrapLayout"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                app:textWrap_viewType="text"
+                android:textIsSelectable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                app:layout_widthPercent="50%"
+                app:layout_aspectRatio="150%"
+                app:textWrap_viewType="wrapped"
+                android:background="@color/colorAccent"
+                android:layout_gravity="end|top"/>
+
+        </uk.me.ajmfulcher.textwrap.TextWrapLayout>
+
+        <uk.me.ajmfulcher.textwrap.TextWrapLayout
+            android:id="@+id/right_aligned_textWrapLayout"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                app:textWrap_viewType="text"
+                android:textIsSelectable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                app:layout_widthPercent="50%"
+                app:layout_aspectRatio="170%"
+                app:textWrap_viewType="wrapped"
+                android:background="@color/colorAccent"
+                android:layout_gravity="start|top"/>
+
+        </uk.me.ajmfulcher.textwrap.TextWrapLayout>
+
+        <uk.me.ajmfulcher.textwrap.TextWrapLayout
+            android:id="@+id/padded_left_textWrapLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="56dp"
+            android:paddingLeft="56dp"
+            android:paddingEnd="56dp"
+            android:paddingRight="56dp">
+
+            <TextView
+                app:textWrap_viewType="text"
+                android:textIsSelectable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                app:layout_widthPercent="40%"
+                app:layout_aspectRatio="80%"
+                app:textWrap_viewType="wrapped"
+                android:background="@color/colorAccent"
+                android:layout_gravity="end|top"/>
+
+        </uk.me.ajmfulcher.textwrap.TextWrapLayout>
+
+        <uk.me.ajmfulcher.textwrap.TextWrapLayout
+            android:id="@+id/padded_right_textWrapLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="31dp"
+            android:paddingLeft="31dp"
+            android:paddingEnd="31dp"
+            android:paddingRight="31dp">
+
+            <TextView
+                app:textWrap_viewType="text"
+                android:textIsSelectable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                app:layout_widthPercent="40%"
+                app:layout_aspectRatio="80%"
+                app:textWrap_viewType="wrapped"
+                android:background="@color/colorAccent"
+                android:layout_gravity="start|top"/>
+
+        </uk.me.ajmfulcher.textwrap.TextWrapLayout>
+
+    </LinearLayout>
+
+</ScrollView>
